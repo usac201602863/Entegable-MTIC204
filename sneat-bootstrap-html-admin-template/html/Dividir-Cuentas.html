@@ -15,12 +15,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Comandas - Agachaditos</title>
+    <title>Cuentas</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/Agachaditos2.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,13 +78,13 @@
                       <div data-i18n="Analytics">Area de mesas</div>
                   </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item active">
                   <a href="Dividir-Cuentas.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-detail"></i>
                       <div data-i18n="Analytics">Cuentas</div>
                   </a>
               </li>
-              <li class="menu-item active">
+              <li class="menu-item">
                   <a href="Comandas.html" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-copy"></i>
                       <div data-i18n="Analytics">Comandas</div>
@@ -183,178 +183,135 @@
               </li>
           </ul>
       </aside>
+		
         <!-- / Menu -->
 
         <!-- Layout container -->
         <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Buscar Mesa..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+             
+				
+                
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+			
+          <!-- / Navbar -->
+
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
+
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h1 class="fw-bold py-3 mb-4">Comandas</h1>
-
+              <h4 class="fw-bold py-3 mb-4">Cuentas</h4>
+				<!-- Cuentas separadas -->
               <div class="row">
-                <div class="col-lg">
-                  <div class="card mb-4">
-                      <h2  class="card-header" >Mesa 1</h2>
-                    <div class="demo-inline-spacing mt-3">
-                      <ul class="list-group">
-                        <li class="list-group-item list-group-item-success">
-                          <H5>PIZZA DE CARNES</H5>
-                          <ul>
-                            <li>
-                              Masa Delgada
-                            </li>
-                            <li>
-                              Extra Queso
-                            </li>
-                            <li>
-                              Orilla de Queso
-                            </li>
-                          </ul>
-                          
-                        </li>
-                        <li class="list-group-item list-group-item-warning">
-                          <h5>LASSAGNA DE LA CASA</h5>
-                          <ul>
-                            <li>
-                              Sin Cebolla
-                            </li>
-                            <li>
-                              Extra Queso
-                            </li>
-                            <li>
-                              2 porciones de panes con ajo
-                            </li>
-                          </ul>
-                          <button type="button" class="btn rounded-pill btn-success" style="float: right;">¡Listo!</button>
-                        </li>
-                      </ul>
-                    </div>
+                <div class="col-md-6">
+                  <div class="card mb-4" >
+                    <h5 class="card-header">¿Cuentas separadas?</h5>
+					<div class="d-flex justify-content-center">
+						<div class="form-check">
+							<input
+								name="default-radio-1"
+								class="form-check-input "
+								type="radio"
+								value=""
+								id="defaultRadio1"
+							/>
+							<label class="form-check-label" for="defaultRadio1">Si </label>
+						</div>
+						<div class="form-check">
+							<input
+								name="default-radio-1"
+								class="form-check-input mb-3 mx-2"
+								type="radio"
+								value=""
+								id="defaultRadio2"
+								checked
+							/>
+						<label class="form-check-label" for="defaultRadio2">No </label>
+						</div>
+					</div>
+					<div class="mb-3 mx-5">
+                        <label for="exampleFormControlSelect1" class="form-label">Separar por:</label>
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option selected>No separar</option>
+                          <option value="1">Partes iguales</option>
+                          <option value="2">Por asiento</option>
+						  <option value="2">Por cantidad</option>
+                        </select>
+                      </div>
+					   <div class="mb-3 mx-5">
+						<div class="input-group">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Cantidad"
+								aria-label="Recipient's username"
+								aria-describedby="button-addon2"
+							/>
+							<button class="btn btn-outline-primary" type="button" id="button-addon2">Separar</button>
+					   </div>
+					   <div class="d-flex justify-content-center mt-3 mb-3" >
+						<button type="button" class="btn btn-primary">Pagar</button>
+					  </div>
+					 </div>
+
                   </div>
                 </div>
-                <!-- MESA 2 -->
-                <div class="col-lg">
-                  <div class="card mb-4">
-                      <h2  class="card-header" >Mesa 2</h2>
-                    <div class="demo-inline-spacing mt-3">
-                      <ul class="list-group">
-                        <li class="list-group-item list-group-item-success">
-                          <H5>CARPACCIO</H5>
-                          <ul>
-                            <li>
-                              De Lomo
-                            </li>
-                            <li>
-                              Sin Alcaparras
-                            </li>
-                          </ul>
-                          
-                        </li>
-                        <li class="list-group-item list-group-item-danger">
-                          <h5>Lasagna 5 quesos</h5>
-                          <ul>
-                            <li>
-                              2 porciones de panes con ajo
-                            </li>
-                            <li>
-                              1 porcion de panes con mantequilla
-                            </li>
-                          </ul>
-                          <button type="button" class="btn rounded-pill btn-success" style="float: right;">¡Listo!</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+				<!-- seleccion mesas -->
+				<div class="col-md-6">
+                  <div class="card mb-4" >
+                    <h5 class="card-header">Seleccionar asiento</h5>
+					<div class="card-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlSelect1" class="form-label">Asientos</label>
+                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                          <option selected>Seleccionar número de asiento</option>
+                          <option value="1">Uno</option>
+                          <option value="2">Dos</option>
+                          <option value="3">Tres</option>
+						  <option value="4">Cuatro</option>
+						  <option value="5">Cinco</option>
+                        </select>
+					  <div class="d-flex justify-content-center mt-3 mb-3" >
+						<button type="button" class="btn btn-primary">Agregar orden</button>
+					  </div>
+                      </div>
+					 </div>
+					 </div>
                 </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg">
-                  <div class="card mb-4">
-                      <h2  class="card-header" >Mesa 3</h2>
-                    <div class="demo-inline-spacing mt-3">
-                      <ul class="list-group">
-                        <li class="list-group-item list-group-item-success">
-                          <H5>HAMBURGUESA MUSRHOOMS</H5>
-                          <ul>
-                            <li>
-                              Doble Torta
-                            </li>
-                            <li>
-                              Extra Queso
-                            </li>
-                            <li>
-                              Acompañado con papas fritas
-                            </li>
-                          </ul>
-                          
-                        </li>
-                        <li class="list-group-item list-group-item-warning">
-                          <h5>HAMBURGUESA ANGUS BACON</h5>
-                          <ul>
-                            <li>
-                              Sin Cebolla
-                            </li>
-                            <li>
-                              Extra Bacon
-                            </li>
-                            <li>
-                              Acompañado de aros de cebolla
-                            </li>
-                          </ul>
-                          <button type="button" class="btn rounded-pill btn-success" style="float: right;">¡Listo!</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- MESA 4 -->
-                <div class="col-lg">
-                  <div class="card mb-4">
-                      <h2  class="card-header" >Mesa 4</h2>
-                    <div class="demo-inline-spacing mt-3">
-                      <ul class="list-group">
-                        <li class="list-group-item list-group-item-info">
-                          <H5>CARPACCIO</H5>
-                          <ul>
-                            <li>
-                              De Camaron
-                            </li>
-                          </ul>
-                          <button type="button" class="btn rounded-pill btn-success" style="float: right;">¡Listo!</button>
-                        </li>
-                        <li class="list-group-item list-group-item-info">
-                          <h5>Lasagna de la casa familiar</h5>
-                          <ul>
-                            <li>
-                              2 porciones de panes con ajo
-                            </li>
-                            <li>
-                              2 porcion de panes con mantequilla
-                            </li>
-                            <li>
-                              Extra Pollo
-                            </li>
-                          </ul>
-                          <button type="button" class="btn rounded-pill btn-success" style="float: right;">¡Listo!</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        
 
 
-
-
-
-
-
-              
-              
-
-              
+            <!-- / Content -->
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
@@ -365,9 +322,8 @@
                     document.write(new Date().getFullYear());
                   </script>
                   , made with ❤️ by
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">Montaditos</a>
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">agachaditos</a>
                 </div>
-                
               </div>
             </footer>
             <!-- / Footer -->
@@ -384,7 +340,6 @@
     </div>
     <!-- / Layout wrapper -->
 
-    
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -402,6 +357,8 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
+
+    <script src="../assets/js/form-basic-inputs.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
