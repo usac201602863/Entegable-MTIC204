@@ -170,31 +170,6 @@
 						<label class="form-check-label" for="defaultRadio2">No </label>
 						</div>
 					</div>
-					<div class="mb-3 mx-5">
-                        <label for="exampleFormControlSelect1" class="form-label">Separar por:</label>
-                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                          <option selected>No separar</option>
-                          <option value="1">Partes iguales</option>
-                          <option value="2">Por asiento</option>
-						  <option value="2">Por cantidad</option>
-                        </select>
-                      </div>
-					   <div class="mb-3 mx-5">
-						<div class="input-group">
-							<input
-								type="text"
-								class="form-control"
-								placeholder="Cantidad"
-								aria-label="Recipient's username"
-								aria-describedby="button-addon2"
-							/>
-							<button class="btn btn-outline-primary" type="button" id="button-addon2">Separar</button>
-					   </div>
-					   <div class="d-flex justify-content-center mt-3 mb-3" >
-						<button type="button" class="btn btn-primary">Pagar</button>
-					  </div>
-					 </div>
-
                   </div>
                 </div>
 				<!-- seleccion mesas -->
@@ -204,19 +179,31 @@
 					<div class="card-body">
                       <div class="mb-3">
                         <label for="exampleFormControlSelect1" class="form-label">Asientos</label>
-                        <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                          <option selected>Seleccionar número de asiento</option>
-                          <option value="1">Uno</option>
-                          <option value="2">Dos</option>
-                          <option value="3">Tres</option>
-						  <option value="4">Cuatro</option>
-						  <option value="5">Cinco</option>
-                        </select>
-					  <div class="d-flex justify-content-center mt-3 mb-3" >
-						<button type="button" class="btn btn-primary">Agregar orden</button>
-					  </div>
                       </div>
+					 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+					 <div class="container-fluid">
+					 <a href="page-menu.html" class="app-brand-link gap-2">
+					 <a class="navbar-brand" href="javascript:void(0)">Asiento 1</a>
+					 <form class="d-flex" onsubmit="return false">
+                      <button class="btn btn-outline-primary" type="submit">Agregar orden</button>
+                    </form>
+					</a>
 					 </div>
+					 </nav>
+					 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+					 <div class="container-fluid">
+					 <a href="page-menu.html" class="app-brand-link gap-2">
+					 <a class="navbar-brand" href="javascript:void(0)">Asiento 2</a>
+					 <form class="d-flex" onsubmit="return false">
+                      <button class="btn btn-outline-primary" type="submit">Agregar orden</button>
+                    </form>
+					</a>
+					 </div>
+					 </nav>
+					 </div>
+					 <div class="d-flex justify-content-center mt-3 mb-3" >
+						<button type="button" class="btn btn-primary">Agregar asiento</button>
+					  </div>
 					 </div>
                 </div>
         
